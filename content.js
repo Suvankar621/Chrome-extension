@@ -15,7 +15,8 @@ function createEventObject(eventType, details) {
   
   function trackClick(e) {
     let element = e.target;
-    let eventDetails = `Clicked on element: ${element.tagName}, id: ${element.id}, class: ${element.className}`;
+    console.log(element)
+    let eventDetails = `Clicked on element: ${element.tagName}, id: ${element.id}, class: ${element.className} value:${element.innerText}`;
     let eventObject = createEventObject('click', eventDetails);
     // console.log(eventObject);
     saveEvent(eventObject);
