@@ -13,6 +13,10 @@ body{
 
 
 }
+#startScanning:active{
+scale: 0.9;
+
+}
 #downloadXML{
     background-color: rgb(0, 174, 3);
     border: none;
@@ -20,4 +24,7 @@ body{
     padding: 1vmax;
     border-radius: 9px;
     cursor: pointer;
+}
+#downloadXML:active{
+    scale: 0.9;
 }
